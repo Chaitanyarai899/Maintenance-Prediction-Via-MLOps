@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/assets/img/jet_engine.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>RUL Prediction</h1>
+                            <span class="subheading">Engine's Remaining Useful life prediction Web App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+
+           <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form-v9 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="static/css/style.css"/>
+</head>
+<body class="form-v9">
+	<div class="page-content">
+		<div class="form-v9-content" style="background-image: url('')">
+			<form class="form-detail" action="/predict" method="post">
+				<h2>Please Fill The Information</h2>
+				<div class="form-row-total">
+
+					<div class="form-row">
+                        <label for="engine"> engine:</label>
+						<input type="text" name="engine" id="engine" class="input-text" placeholder="engine" required>
+					</div>
+
+					<div class="form-row">
+                        <label for="cycle"> cycle:</label>
+						<input type="text" name="cycle" id="cycle" class="input-text" placeholder="cycle" required>
+					</div>
+
+				</div>
+
+
+				<div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="setting_1"> setting_1:</label>
+						<input type="text" name="setting_1" id="setting_1" class="input-text" placeholder="setting_1" required>
+					</div>
+
+
+                    <div class="form-row">
+                        <label for="setting_2"> setting_2:</label>
+						<input type="text" name="setting_2" id="setting_2" class="input-text" placeholder="setting_2" required>
+					</div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+
+                    <div class="form-row">
+                        <label for="LPC_outlet_temperature_degR"> LPC_outlet_temperature_degR:</label>
+						<input type="text" name="LPC_outlet_temperature_degR" id="LPC_outlet_temperature_degR" class="input-text" placeholder="LPC_outlet_temperature_degR" required>
+					</div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="LPT_outlet_temperature_degR"> LPT_outlet_temperature_degR:</label>
+						<input type="text" name="LPT_outlet_temperature_degR" id="LPT_outlet_temperature_degR" class="input-text" placeholder="LPT_outlet_temperature_degR" required>
+					</div>
+
+                    <div class="form-row">
+                        <label for="bypass_duct_pressure_psia"> bypass_duct_pressure_psia:</label>
+						<input type="text" name="bypass_duct_pressure_psia" id="bypass_duct_pressure_psia" class="input-text" placeholder="bypass_duct_pressure_psia" required>
+					</div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="HPC_outlet_pressure_psia"> HPC_outlet_pressure_psia:</label>
+						<input type="text" name="HPC_outlet_pressure_psia" id="HPC_outlet_pressure_psia" class="input-text" placeholder="HPC_outlet_pressure_psia" required>
+					</div>
+
+                    <div class="form-row">
+                        <label for="Physical_core_speed_rpm"> Physical_core_speed_rpm:</label>
+						<input type="text" name="Physical_core_speed_rpm" id="Physical_core_speed_rpm" class="input-text" placeholder="Physical_core_speed_rpm" required>
+					</div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="HPC_outlet_Static_pressure_psia"> HPC_outlet_Static_pressure_psia:</label>
+						<input type="text" name="HPC_outlet_Static_pressure_psia" id="HPC_outlet_Static_pressure_psia" class="input-text" placeholder="HPC_outlet_Static_pressure_psia" required>
+					</div>
+
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="Ratio_of_fuel_flow_to_Ps30_pps_psia"> Ratio_of_fuel_flow_to_Ps30_pps_psia:</label>
+						<input type="text" name="Ratio_of_fuel_flow_to_Ps30_pps_psia" id="Ratio_of_fuel_flow_to_Ps30_pps_psia" class="input-text" placeholder="Ratio_of_fuel_flow_to_Ps30_pps_psia" required>
+					</div>
+
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="Bypass_Ratio"> Bypass_Ratio:</label>
+						<input type="text" name="Bypass_Ratio" id="Bypass_Ratio" class="input-text" placeholder="Bypass_Ratio" required>
+					</div>
+
+
+				</div>
+
+                
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="Bleed_Enthalpy"> Bleed_Enthalpy:</label>
+						<input type="text" name="Bleed_Enthalpy" id="Bleed_Enthalpy" class="input-text" placeholder="Bleed_Enthalpy" required>
+					</div>
+
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="High_pressure_turbines_Cool_air_flow"> High_pressure_turbines_Cool_air_flow:</label>
+						<input type="text" name="High_pressure_turbines_Cool_air_flow" id="High_pressure_turbines_Cool_air_flow" class="input-text" placeholder="High_pressure_turbines_Cool_air_flow" required>
+					</div>
+
+
+				</div> 
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="Low_pressure_turbines_Cool_air_flow"> Low_pressure_turbines_Cool_air_flow:</label>
+						<input type="text" name="Low_pressure_turbines_Cool_air_flow" id="Low_pressure_turbines_Cool_air_flow" class="input-text" placeholder="Low_pressure_turbines_Cool_air_flow" required>
+					</div>
+
+
+				</div>
+
+
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Predict">
+				</div>
+			</form>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+        </div>
+
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/gauravofficial/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/@Seawinds_Media">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Sengarofficial">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic"></div>
+                        <div class="small text-center text-muted fst-italic"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/js/scripts.js"></script>
+    </body>
+</html>
