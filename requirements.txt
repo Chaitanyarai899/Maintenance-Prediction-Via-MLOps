@@ -9,6 +9,7 @@ python-box
 PyYAML
 tqdm
 ensure
+Matplotlib
 joblib
 types-PyYAML
 Flask
