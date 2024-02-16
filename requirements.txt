@@ -5,6 +5,7 @@ seaborn
 scikit-learn 
 scipy
 mlflow
+tensorflow
 python-box
 PyYAML
 tqdm
